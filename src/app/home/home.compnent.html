@@ -1,1 +1,8 @@
-<div>This is the home page where the flights will appear.</div>
+<div>
+  <div *ngFor="let flight of flights" class="flight-results">
+    <div class="flight_number">{{flight.flightNumber}}</div>
+    <div class="departs">{{flight.depart}}</div>
+    <div class="arrives">{{flight.arrive}}</div>
+    <div class="nonstop">{{flight.nonstop}}</div>
+  </div>
+</div>
